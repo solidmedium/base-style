@@ -1,0 +1,50 @@
+// variables
+
+@brand-home:		#a3a29a;
+
+@brand-primary:		#02b294;
+
+@container-width: 	850px;
+
+@content-pusher:	650px;
+
+@icon-font-path:	"../bootstrap/fonts/";
+
+// resets
+
+
+// colours
+
+.co-primary {
+	color:@brand-primary;
+}
+
+.co-primary-bk {
+	background-color:@brand-primary;
+}
+
+.co-home {
+	color:@brand-home;
+}
+
+.co-home-bk {
+	background-color:@brand-home;
+}
+
+// mixins
+
+.transition(@transition:all .5s ease 0s) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	transition: @transition;
+}
+.greyscale(@value:100%) {
+	-webkit-filter: grayscale(@value);
+	-moz-filter: grayscale(@value);
+	filter: grayscale(@value);
+}
+.translate-xy(@value-x:2000px, @value-y:0) {
+	-webkit-transform:translate(@value-x, @value-y);
+	-moz-transform:translate(@value-x, @value-y);
+	transform:translate(@value-x, @value-y);
+}
