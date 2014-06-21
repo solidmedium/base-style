@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			}
 		},
 		concat: {
-	        js : {
+	        compile : {
 	            src: ['source/js/libraries/*.js'],
 	            dest: 'source/js/lib-combined.js'
 	        }
@@ -17,31 +17,36 @@ module.exports = function(grunt) {
 			files: ['source/js/custom.js']
 		},
 	    uglify: {
-			js: {
+			min: {
                 files: {
-                    'source/js/lib-combined.js': ['source/js/lib-combined.min.js']
+                    'source/js/lib-combined.min.js': ['source/js/lib-combined.js']
                 }
             }
 		},
 		watch: {
 			css: {
 				files: ['source/less/*.less'],
-				tasks: ['less:style','notify:less']
+				tasks: ['less:style','notify']
 			},
 			libraries: {
 				files: ['source/js/libraries/*.js'],
-				tasks: ['concat','notify:less']
+				tasks: ['concat','notify']
+			},
+			minify: {
+				files: ['source/js/lib-combined.js'],
+				tasks: ['uglify','notify']
 			},
 			custom: {
 				files: ['source/js/*.js'],
-				tasks: ['jshint','notify:less']
+				tasks: ['jshint','notify']
 			}
 		},
 		notify: {
-			less: {
+			watch: {
 				options: {
 					title: 'GRUNT TASK COMPLETE',
-					message: 'You Are Awesome, Fucking Awesome!',
+					max_jshint_notifications: 5,
+					message: 'You Are Awesome, Fucking Awesome!'
 				}
 			}
 		}
