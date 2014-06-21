@@ -31,7 +31,7 @@ var NOR = {
 			e.stopPropagation();
 		});
 		
-		return _this
+		return _this;
 	},
 	
 	// slideshow functions
@@ -52,7 +52,7 @@ var NOR = {
 		$("#supersized").flexslider(slider1);
 		$("#catalogue-slider").flexslider(slider2);
 		
-		return _this
+		return _this;
 	},
 	
 	// modal functions
@@ -97,7 +97,7 @@ var NOR = {
 			//return _this
 		});
 		
-		return _this
+		return _this;
 	},
 	
 	// validation function
@@ -120,7 +120,7 @@ var NOR = {
 		$('#catalog-enquiry').parsley(parsleyHandler);
 		$('#subscribe-form').parsley(parsleyHandler);
 		
-		return _this
+		return _this;
 	},
 	
 	// animated scroll to anchor function
@@ -132,7 +132,7 @@ var NOR = {
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
 		});
-		return _this
+		return _this;
 	},
 	
 };
@@ -152,7 +152,7 @@ var checkin = $('#checkin').datepicker({
 	}
 }).on('changeDate', function(ev) {
 	if (ev.date.valueOf() > checkout.date.valueOf()) {
-		var newDate = new Date(ev.date)
+		var newDate = new Date(ev.date);
 		newDate.setDate(newDate.getDate() + 1);
 		checkout.setValue(newDate);
 	}

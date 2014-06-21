@@ -14,22 +14,16 @@
 <body>
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Front End Framework v1</h1>
-			<p>Inital setup...</p>
+			<h1>Front End Framework v1 </h1>
+			<p><i class="fa fa-spin fa-refresh"></i> Inital setup...</p>
 		</div>
 	</div>
 	<!-- jQuery -->
 	<script type="text/javascript" src="source/js/jquery.min.js"></script>
 	<!-- bootstrap -->
 	<script type="text/javascript" src="source/bootstrap/js/bootstrap.min.js"></script>
-	<!-- custom select -->
-	<script type="text/javascript" src="source/js/bootstrap-select.js"></script>
-	<!-- date picker -->
-	<script type="text/javascript" src="source/js/bootstrap-datepicker.js"></script>
-	<!-- FlexSlider -->
-	<script type="text/javascript" src="source/js/jquery.flexslider.js"></script>
-	<!-- form validation -->
-	<script type="text/javascript" src="source/js/parsley.min.js"></script>
+	<!-- compiled libraries -->
+	<script type="text/javascript" src="source/js/lib-combined.js"></script>
 	<!-- Add fancyBox main JS and CSS files -->
 	<script type="text/javascript" src="source/js/custom.js"></script>
 </body>
