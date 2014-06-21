@@ -1,10 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="">
-<!--<![endif]-->
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +19,7 @@
 	<script type="text/javascript" src="source/bootstrap/js/bootstrap.min.js"></script>
 	<!-- compiled libraries -->
 	<script type="text/javascript" src="source/js/lib-combined.js"></script>
-	<!-- Add fancyBox main JS and CSS files -->
+	<!-- Custom js / options -->
 	<script type="text/javascript" src="source/js/custom.js"></script>
 </body>
 </html>
