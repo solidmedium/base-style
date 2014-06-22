@@ -10,7 +10,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Front End Framework v1</h1>
-			<p><i class="fa fa-spin fa-refresh"></i> Inital setup...</p>
+			<p><i class="fa fa-spin fa-refresh"></i> Inital setup...</p>something
 		</div>
 	</div>
 	<!-- jQuery -->
