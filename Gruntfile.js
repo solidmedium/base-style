@@ -24,19 +24,19 @@ module.exports = function(grunt) {
             }
 		},
 		watch: {
-			css: {
+			less: {
 				files: ['source/less/*.less'],
 				tasks: ['less:style','notify:less']
 			},
-			libraries: {
+			concat: {
 				files: ['source/js/libraries/*.js'],
 				tasks: ['concat','notify:concat']
 			},
-			custom: {
+			jshint: {
 				files: ['source/js/custom.js'],
 				tasks: ['jshint','notify:jshint']
 			},
-			minify: {
+			uglify: {
 				files: ['source/js/lib-combined.js'],
 				tasks: ['uglify','notify:uglify']
 			}
